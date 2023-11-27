@@ -1,0 +1,151 @@
+body {
+    width: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+.wallpaper{
+    background-image: url(./pictures/mount\ fuji\ 2\ .png);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100%;
+    
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+header h1{
+    color: #000;
+    box-shadow: 0 0 0 1px #eee;
+    background-color: #cccccc3f;
+
+
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.button-selections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 520px;
+    height: 520px;
+    margin-bottom: 10px;
+    background-color: #cccccc3f;
+    box-shadow: 0 0 0 1px #eee;
+    
+}
+
+.sketch-container {
+    width: 480px;
+    height: 480px;
+    justify-content: center;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  background-color: #eee;
+
+}
+
+.grid-item {
+    width: 100%;
+    padding-bottom: 100%; 
+    background-color: #eee;
+    box-shadow: 0 0 0 1px #ccc
+}
+.grid-select *{
+    background: none;
+    border: none;
+
+}
+.grid-select {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-size {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:max-content;
+    margin-bottom: 10px;
+    gap: 10px;
+    color: #000;
+    box-shadow: 0 0 0 1px #eee;
+    background-color: #cccccc74;
+}
+
+.button-size button {
+    margin: 0;
+    background: none;
+    border: none;
+    padding:0;
+    
+}
+
+.Editers {
+    display: flex;
+    justify-content: center; align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    margin-bottom: 2%;
+    gap: 10px;
+    color: #000;
+    box-shadow: 0 0 0 1px #eee;
+    background-color: #cccccc74;
+
+}
+
+.paint-palette{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    color: #000;
+    box-shadow: 0 0 0 1px #eee;
+    background-color: #cccccc74;
+}
+.color-history {
+    display: flex;
+    margin: 0;
+    gap: 2.5px;
+}
+
+.color-history-item {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    cursor: pointer;
+    margin: 3px;
+}
+
+.grid-options {
+    color: #000;
+    box-shadow: 0 0 0 1px #eee;
+    background-color: #cccccc74;
+}

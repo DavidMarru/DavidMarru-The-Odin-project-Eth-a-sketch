@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>your mind Sketch</title>
+</head>
+<body>
+<div class="wallpaper">
+    <header>
+        <h1>Your mind Sketch</h1>
+    </header>
+    <section>
+        <div class="background">
+            <div class="sketch-container">
+                <div id="grid-container"></div>
+            </div>
+        </div>
+            <div class="grid-select">
+                <div class="button-selections">
+                    <div class="grid-size">
+                        <button onclick="setGridSize(16, 16)">16x16</button>
+                        <button onclick="setGridSize(32, 32)">32x32</button>
+                        <button onclick="setGridSize(50, 50)">50x50</button>
+                        <button onclick="setGridSize(100, 100)">100x100</button>
+                    </div>
+                    <div class="Editers">
+                        <label for="colorPicker">Color:</label>
+                        <input type="color" id="colorPicker" onchange="changeBackgroundColor(event)">
+                        <button onclick="resetColor()">Eraser</button>
+                        <button class="remove-color-button" onclick="removeColor()">Remove Color</button>
+                        <button onclick="undo()">Undo</button>
+                        <button onclick="redo()">Redo</button>
+                        <button onclick="deleteAll()">Delete All</button>
+                    </div>
+                    <div class="grid-options">
+                        <label>
+                            <input type="checkbox" id="removeGridLineCheckbox" onchange="toggleGridLines()"> Remove Grid Lines
+                        </label>
+                    </div>
+                    <div class="paint-palette">
+                        <div class="color-history" id="colorHistoryContainer"></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="./javascript.js"></script>
+</body>
+</html>
