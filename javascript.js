@@ -16,8 +16,8 @@ function setGridSize(rows, columns) {
 
         gridContainer.innerHTML = '';
 
-        for (let x = 0; x < rows; x++) {
-            for (let y = 0; y < columns; y++) {
+        for (let xAxis = 0; xAxis < rows; xAxis++) {
+            for (let yAxis = 0; yAxis < columns; yAxis++) {
                 const gridItem = document.createElement('div');
                 gridItem.classList.add('grid-item');
 
